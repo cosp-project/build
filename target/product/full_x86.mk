@@ -24,7 +24,7 @@
 # network connection so that you can use it with ADB
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulator.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/cosp_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/board/generic_x86/device.mk)
 
 ifdef NET_ETH0_STARTONBOOT

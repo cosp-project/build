@@ -19,7 +19,7 @@
 # on the generic system image, place them in build/make/target/board/
 # treble_system.prop.
 
-# cosp_arm_ab-userdebug is a Legacy GSI for the devices with:
+# aosp_arm_ab-userdebug is a Legacy GSI for the devices with:
 # - ARM 32 bits user space
 # - 32 bits binder interface
 # - system-as-root
@@ -33,7 +33,7 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_verifier
 
-PRODUCT_NAME := cosp_arm_ab
+PRODUCT_NAME := aosp_arm_ab
 PRODUCT_DEVICE := generic_arm_ab
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := COSP on ARM32

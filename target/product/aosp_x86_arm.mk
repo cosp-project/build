@@ -15,7 +15,7 @@
 #
 
 
-# cosp_x86 with arm libraries needed by binary translation.
+# aosp_x86 with arm libraries needed by binary translation.
 
 include $(SRC_TARGET_DIR)/product/full_x86.mk
 
@@ -39,5 +39,5 @@ PRODUCT_PACKAGES += \
   libOpenSLES_arm \
   libz_arm \
 
-PRODUCT_NAME := cosp_x86_arm
+PRODUCT_NAME := aosp_x86_arm
 PRODUCT_DEVICE := generic_x86_arm

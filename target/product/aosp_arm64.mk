@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-# The system image of cosp_arm64-userdebug is a GSI for the devices with:
+# The system image of aosp_arm64-userdebug is a GSI for the devices with:
 # - ARM 64 bits user space
 # - 64 bits binder interface
 # - system-as-root
@@ -38,7 +38,7 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulator.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/cosp_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/board/generic_arm64/device.mk)
 
 # Enable dynamic partition size
@@ -54,7 +54,7 @@ PRODUCT_PACKAGES += \
 # Needed by Pi newly launched device to pass VtsTrebleSysProp on GSI
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
-PRODUCT_NAME := cosp_arm64
+PRODUCT_NAME := aosp_arm64
 PRODUCT_DEVICE := generic_arm64
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := COSP on ARM arm64 Emulator

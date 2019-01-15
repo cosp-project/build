@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/cosp_arm.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_arm.mk)
 
 # Define the host tools and libs that are parts of the SDK.
 $(call inherit-product, sdk/build/product_sdk.mk)

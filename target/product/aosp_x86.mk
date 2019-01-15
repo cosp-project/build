@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-# The system image of cosp_x86-userdebug is a GSI for the devices with:
+# The system image of aosp_x86-userdebug is a GSI for the devices with:
 # - x86 32 bits user space
 # - 64 bits binder interface
 # - system-as-root
@@ -38,4 +38,4 @@ PRODUCT_PACKAGES += \
 # Needed by Pi newly launched device to pass VtsTrebleSysProp on GSI
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
-PRODUCT_NAME := cosp_x86
+PRODUCT_NAME := aosp_x86

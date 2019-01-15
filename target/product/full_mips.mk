@@ -19,7 +19,7 @@
 # mips build quite specifically for the emulator, and might not be
 # entirely appropriate to inherit from for on-device configurations.
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/cosp_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/board/generic_mips/device.mk)
 
 include $(SRC_TARGET_DIR)/product/emulator.mk
