@@ -27,7 +27,7 @@ PARSE_TIME_MAKE_GOALS := \
 	cts \
 	custom_images \
 	deps-license \
-	dicttool_aosp \
+	dicttool_cosp \
 	dist \
 	dump-products \
 	eng \

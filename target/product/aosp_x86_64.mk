@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-# The system image of aosp_x86_64-userdebug is a GSI for the devices with:
+# The system image of cosp_x86_64-userdebug is a GSI for the devices with:
 # - x86 64 bits user space
 # - 64 bits binder interface
 # - system-as-root
@@ -38,7 +38,7 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulator.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/cosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/board/generic_x86_64/device.mk)
 
 # Enable dynamic partition size
@@ -64,7 +64,7 @@ PRODUCT_PACKAGES += \
 	vgabios-cirrus.bin \
 
 # Overrides
-PRODUCT_NAME := aosp_x86_64
+PRODUCT_NAME := cosp_x86_64
 PRODUCT_DEVICE := generic_x86_64
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := AOSP on IA x86_64 Emulator
+PRODUCT_MODEL := COSP on IA x86_64 Emulator

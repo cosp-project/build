@@ -24,7 +24,7 @@
 # network connection so that you can use it with ADB
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulator.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/cosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/board/generic_x86/device.mk)
 
 ifdef NET_ETH0_STARTONBOOT
@@ -40,4 +40,4 @@ PRODUCT_PACKAGES += \
 PRODUCT_NAME := full_x86
 PRODUCT_DEVICE := generic_x86
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := AOSP on IA Emulator
+PRODUCT_MODEL := COSP on IA Emulator

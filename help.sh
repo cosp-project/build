@@ -46,10 +46,10 @@ So, for example, you could run:
 
 cd '"${TOP}"'
 source build/envsetup.sh
-lunch aosp_arm-userdebug
+lunch cosp_arm-userdebug
 m -j java
 
-to build all of the java code for the userdebug variant of the aosp_arm device.
+to build all of the java code for the userdebug variant of the cosp_arm device.
 '
 
 echo "$message"

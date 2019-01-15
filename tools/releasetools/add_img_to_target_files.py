@@ -688,7 +688,7 @@ def AddImagesToTargetFiles(filename):
   # common.GetBootableImage() returns the image directly if present.
   boot_image = common.GetBootableImage(
       "IMAGES/boot.img", "boot.img", OPTIONS.input_tmp, "BOOT")
-  # boot.img may be unavailable in some targets (e.g. aosp_arm64).
+  # boot.img may be unavailable in some targets (e.g. cosp_arm64).
   if boot_image:
     partitions['boot'] = os.path.join(OPTIONS.input_tmp, "IMAGES", "boot.img")
     if not os.path.exists(partitions['boot']):

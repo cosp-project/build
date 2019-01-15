@@ -48,7 +48,7 @@ $(call inherit-product-if-exists, device/generic/goldfish/vendor.mk)
 #watchdog tiggers reboot because location service is not
 #responding, disble it for now.
 #still keep it on internal master as it is still working
-#once it is fixed in aosp, remove this block of comment.
+#once it is fixed in cosp, remove this block of comment.
 #PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 #config.disable_location=true
 

@@ -32,13 +32,13 @@ PRODUCT_COPY_FILES += \
     device/generic/goldfish/fstab.ranchu.early.arm:root/fstab.ranchu.early
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/cosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/board/generic_mips64/device.mk)
 
 include $(SRC_TARGET_DIR)/product/emulator.mk
 
 # Overrides
-PRODUCT_NAME := aosp_mips64
+PRODUCT_NAME := cosp_mips64
 PRODUCT_DEVICE := generic_mips64
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := AOSP on MIPS64 Emulator
+PRODUCT_MODEL := COSP on MIPS64 Emulator

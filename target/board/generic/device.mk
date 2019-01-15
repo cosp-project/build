@@ -27,7 +27,7 @@ PRODUCT_COPY_FILES := \
 
 # NFC:
 #   Provide default libnfc-nci.conf file for devices that does not have one in
-#   vendor/etc because aosp system image (of aosp_$arch products) is going to
+#   vendor/etc because cosp system image (of cosp_$arch products) is going to
 #   be used as GSI.
 #   May need to remove the following for newly launched devices in P since this
 #   NFC configuration file should be in vendor/etc, instead of system/etc

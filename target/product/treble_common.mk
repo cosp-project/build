@@ -19,8 +19,8 @@
 # on the generic system image, place them in build/make/target/board/
 # treble_system.prop.
 
-# Generic system image inherits from AOSP with telephony
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+# Generic system image inherits from COSP with telephony
+$(call inherit-product, $(SRC_TARGET_DIR)/product/cosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
 
 # Enable dynamic partition size

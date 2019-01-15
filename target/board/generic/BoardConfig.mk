@@ -24,7 +24,7 @@ ifneq ($(TARGET_BUILD_APPS)$(filter cts sdk,$(MAKECMDGOALS)),)
 # This architecture variant should NOT be used for 32 bit arm platform
 # builds. It is the lowest common denominator required to build
 # an unbundled application for all supported 32 platforms.
-# cts for 32 bit arm is built using aosp_arm64 product.
+# cts for 32 bit arm is built using cosp_arm64 product.
 #
 # If you are building a 32 bit platform (and not an application),
 # you should set the following as 2nd arch variant:
@@ -35,7 +35,7 @@ ifneq ($(TARGET_BUILD_APPS)$(filter cts sdk,$(MAKECMDGOALS)),)
 TARGET_ARCH_VARIANT := armv7-a
 # DO NOT USE
 else
-# Starting from Pi, System image of aosp_arm products is the new GSI
+# Starting from Pi, System image of cosp_arm products is the new GSI
 # for real devices newly launched for Pi. These devices are usualy not
 # as performant as the mainstream 64-bit devices and the performance
 # provided by NEON is important for them to pass related CTS tests.

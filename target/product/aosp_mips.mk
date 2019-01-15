@@ -28,4 +28,4 @@ PRODUCT_COPY_FILES += \
 
 include $(SRC_TARGET_DIR)/product/full_mips.mk
 
-PRODUCT_NAME := aosp_mips
+PRODUCT_NAME := cosp_mips

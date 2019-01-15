@@ -13,6 +13,6 @@ Then you can start up new instances with:
 ```
 $ docker run -it --rm -v $ANDROID_BUILD_TOP:/src android-build-trusty
 > cd /src; source build/envsetup.sh
-> lunch aosp_arm-eng
+> lunch cosp_arm-eng
 > m -j50
 ```

@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-# Common boardconfig settings for generic AOSP products targetting mobile
+# Common boardconfig settings for generic COSP products targetting mobile
 # (phone/table) devices.
 
 # VNDK
@@ -24,7 +24,7 @@ BOARD_VNDK_VERSION := current
 TARGET_SYSTEM_PROP := build/make/target/board/treble_system.prop
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
-# Bootloader, kernel and recovery are not part of generic AOSP image
+# Bootloader, kernel and recovery are not part of generic COSP image
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_KERNEL := true
 
@@ -39,13 +39,13 @@ TARGET_USES_MKE2FS := true
 # Enable dyanmic system image size and reserved 64MB in it.
 BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 67108864
 
-# Generic AOSP image always requires separate vendor.img
+# Generic COSP image always requires separate vendor.img
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Android generic system image always create metadata partition
 BOARD_USES_METADATA_PARTITION := true
 
-# Generic AOSP image does NOT support HWC1
+# Generic COSP image does NOT support HWC1
 TARGET_USES_HWC2 := true
 # Set emulator framebuffer display device buffer count to 3
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3

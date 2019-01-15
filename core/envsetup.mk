@@ -83,7 +83,7 @@ CORRECT_BUILD_ENV_SEQUENCE_NUMBER := 13
 # NOTE: This will be overridden in product_config.mk if make
 # was invoked with a PRODUCT-xxx-yyy goal.
 ifeq ($(TARGET_PRODUCT),)
-TARGET_PRODUCT := aosp_arm
+TARGET_PRODUCT := cosp_arm
 endif
 
 

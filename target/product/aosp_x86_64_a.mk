@@ -21,7 +21,7 @@
 
 include build/make/target/product/treble_common_64.mk
 
-PRODUCT_NAME := aosp_x86_64_a
+PRODUCT_NAME := cosp_x86_64_a
 PRODUCT_DEVICE := generic_x86_64_a
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := AOSP on x86_64
+PRODUCT_MODEL := COSP on x86_64

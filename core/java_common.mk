@@ -310,7 +310,7 @@ else # LOCAL_IS_HOST_MODULE
     full_shared_java_header_libs := $(call java-lib-header-files,$(LOCAL_JAVA_LIBRARIES),true)
   else # !USE_CORE_LIB_BOOTCLASSPATH
     # Give host-side tools a version of OpenJDK's standard libraries
-    # close to what they're targeting. As of Dec 2017, AOSP is only
+    # close to what they're targeting. As of Dec 2017, COSP is only
     # bundling OpenJDK 8 and 9, so nothing < 8 is available.
     #
     # When building with OpenJDK 8, the following should have no
