@@ -440,7 +440,7 @@ function chooseproduct()
     if [ "x$TARGET_PRODUCT" != x ] ; then
         default_value=$TARGET_PRODUCT
     else
-        default_value=cosp_arm
+        default_value=aosp_arm
     fi
 
     export TARGET_BUILD_APPS=
@@ -592,7 +592,7 @@ function lunch()
         answer=$1
     else
         print_lunch_menu
-        echo -n "Which would you like? [cosp_arm-eng] "
+        echo -n "Which would you like? [aosp_arm-eng] "
         read answer
     fi
 
@@ -600,7 +600,7 @@ function lunch()
 
     if [ -z "$answer" ]
     then
-        selection=cosp_arm-eng
+        selection=aosp_arm-eng
     elif (echo -n $answer | grep -q -e "^[0-9][0-9]*$")
     then
         if [ $answer -le ${#LUNCH_MENU_CHOICES[@]} ]
@@ -724,13 +724,13 @@ function tapas()
         return
     fi
 
-    local product=cosp_arm
+    local product=aosp_arm
     case $arch in
-      x86)    product=cosp_x86;;
-      mips)   product=cosp_mips;;
-      arm64)  product=cosp_arm64;;
-      x86_64) product=cosp_x86_64;;
-      mips64)  product=cosp_mips64;;
+      x86)    product=aosp_x86;;
+      mips)   product=aosp_mips;;
+      arm64)  product=aosp_arm64;;
+      x86_64) product=aosp_x86_64;;
+      mips64)  product=aosp_mips64;;
     esac
     if [ -z "$variant" ]; then
         variant=eng
