@@ -22,6 +22,7 @@ PRODUCT_PACKAGES := \
     CarrierDefaultApp \
     Dialer \
     Contacts \
+    messaging \
     CallLogBackup \
     CellBroadcastReceiver \
     EmergencyInfo \
