@@ -137,9 +137,8 @@ function check_product()
         echo "Couldn't locate the top of the tree.  Try setting TOP." >&2
         return
     fi
-    if (echo -n $1 | grep -q -e "^cosp_") ; then
+    if (echo -n $1 | grep -q -e "^aosp_") ; then
         CUSTOM_BUILD=$(echo -n $1 | sed -e 's/^cosp_//g')
-        export BUILD_NUMBER=$( (date +%s%N ; echo $CUSTOM_BUILD; hostname) | openssl sha1 | sed -e 's/.*=//g; s/ //g' | cut -c1-10 )
     else
         CUSTOM_BUILD=
     fi
